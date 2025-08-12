@@ -206,8 +206,12 @@ class AIAgent:
                     # Get images only from the last tool output
                     last_tool_images = []
                     if tool_outputs:
+                        has_images = False
                         for part in tool_outputs[-1]:  # Last tool output
                             if part.get('type') == 'image' and 'source' in part:
+                                if not has_images:
+                                    last_tool_images = []
+                                    has_images = True
                                 last_tool_images.append(part)
                     image_parts = last_tool_images
 
