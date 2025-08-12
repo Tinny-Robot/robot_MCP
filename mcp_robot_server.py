@@ -137,8 +137,8 @@ def get_robot_state():
             move_gripper_up_mm (float, optional): Distance to move gripper up (positive) or down (negative) in mm
             move_gripper_forward_mm (float, optional): Distance to move gripper forward (positive) or backward (negative) in mm
             tilt_gripper_down_angle (float, optional): Angle to tilt gripper down (positive) or up (negative) in degrees
-            rotate_gripper_counterclockwise_angle (float, optional): Angle to rotate gripper counterclockwise (positive) or clockwise (negative) in degrees
-            rotate_robot_left_angle (float, optional): Angle to rotate entire robot counterclockwise/left (positive) or counterclockwise/right (negative) in degrees
+            rotate_gripper_counterclockwise_angle (float, optional): Angle to rotate gripper (only the actual fingers to adjust the gripping angle) counterclockwise (positive) or clockwise (negative) in degrees
+            rotate_robot_left_angle (float, optional): Angle to rotate entire robot (e.g. if the object is on the side) counterclockwise/left (positive) or counterclockwise/right (negative) in degrees
         Expected input format:
         {
             "move_gripper_up_mm": "10", # Will move up 1 cm
