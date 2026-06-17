@@ -35,6 +35,7 @@ class RobotConfig:
             "type": DEFAULT_ROBOT_TYPE,
             "port": DEFAULT_SERIAL_PORT,
             "remote_ip": DEFAULT_REMOTE_IP,
+            "use_degrees": False,
             "cameras": {
                 "front": OpenCVCameraConfig(
                     index_or_path=0,

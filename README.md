@@ -14,9 +14,7 @@ This repository suppose to work with the SO-ARM100 / 101 robots. Refer to [lerob
 Update! Now it partially supports [LeKiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) (only arm, the mobile base control through MCP is TBD).
 I also added a simple agent that uses MCP server to control the robot. It supports Claude, Gemini and GPT models. In my experience Claude is the best and GPT is not so good, Gemini is in between.
 
-After I released the video and this repository, LeRobot released a significant update of the library that breaks the compatibility with the original code.
-
-If you want to use the original code and exactly follow the video, please use [this release](https://github.com/IliaLarchenko/robot_MCP/tree/v0.0.1).
+This repository is compatible with **lerobot v0.5.2+**. If you want to use the original code and exactly follow the video, please use [this release](https://github.com/IliaLarchenko/robot_MCP/tree/v0.0.1).
 
 ## Quick Start
 

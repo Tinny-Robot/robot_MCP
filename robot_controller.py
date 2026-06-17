@@ -12,8 +12,8 @@ import time
 
 # --- Lerobot Imports ---
 from lerobot.robots import Robot
-from lerobot.robots.so100_follower import SO100Follower, SO100FollowerConfig
-from lerobot.robots.so101_follower import SO101Follower, SO101FollowerConfig
+from lerobot.robots.so_follower import SO100Follower, SO100FollowerConfig
+from lerobot.robots.so_follower import SO101Follower, SO101FollowerConfig
 from lerobot.robots.lekiwi import LeKiwiClient, LeKiwiClientConfig
 
 # --- Local Imports ---
@@ -102,7 +102,7 @@ class RobotController:
         keys_to_exclude = ["type"]
 
         if self.robot_type == "lekiwi":
-            keys_to_exclude.append("port")
+            keys_to_exclude.extend(["port", "use_degrees"])
         else:
             keys_to_exclude.append("remote_ip")
 
